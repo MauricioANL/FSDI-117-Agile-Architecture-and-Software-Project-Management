@@ -1,0 +1,35 @@
+{% if user.is_authenticated %}
+    <div class="add-project-container">
+        <a href="{% url 'project_new' %}">
+            <button class="primary-button">Add Project</button>
+        </a>
+    </div>
+{% endif %}
+
+<h2>My projects</h2>
+
+<div class="projets-list">
+    {% for x in projects %}
+        <div class="proyect-card">
+            <a href="{{x.repository}} " target="_blank">
+                <img src="{{x.image.url}}">
+                <p>{{x.name}}</p>
+                <p>{{x.description}}</p>
+                <p>{{x.year}}</p>
+
+                <div class="skill-container center-row">
+                    {% for s in x.skill %}
+
+                        <label class="text-label">{{s.name}}</label>
+
+                    {% endfor %}
+
+                </div>
+            </a>
+
+        </div>
+
+
+    {% endfor %}
+
+</div>

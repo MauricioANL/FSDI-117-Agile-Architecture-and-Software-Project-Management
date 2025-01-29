@@ -1,0 +1,33 @@
+header{
+    background-color: var(--surface_color);
+    height: 60px;
+}
+
+.header-left-side{
+    width: 30%;
+    /* background-color: red; */
+
+}
+
+.hader-right-slide{
+    width: 70%;
+    /* background-color: blue; */
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item a{
+    color:var(--primary-color-50);
+    font-size:1re;
+    text-transform: uppercase;
+    margin: 0px 2%;
+    padding: 1% 2%;
+    text-decoration: none;
+}
+
+.nav-item a:hover{
+    border-bottom: solid 2px var(--primary-color-50);
+}
+

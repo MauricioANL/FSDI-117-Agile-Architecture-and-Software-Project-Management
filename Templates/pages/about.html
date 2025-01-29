@@ -1,0 +1,37 @@
+{% extends './base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+{% block content  %}
+<div class="about-section center-row">
+    <div class="about-image-container center-row">
+        <img src="{% static 'img/imagen.png' %}" alt="Descripción de la imagen" width="500">
+        <!-- <img src="./img/imagen.png" alt="Descripción de la imagen"> -->
+    </div>
+    <div class="about-description-container center-column">
+        <h1>Hi! I am Mauricio</h1>
+        <h2>Enginer of Sistem Computational</h2>
+        <p>Acquire greater knowledge and develop different work skills in order to grow professionally and at the same time achieve job stability over the next few years.</p>
+
+        <div class="skill-container center-column">
+            <h2>Skills</h2>
+
+            <div class="skill-list center-row">
+                <label class="text-label">C#</label>
+                <label class="text-label">Visual Basic</label>
+                <label class="text-label">.Net Framework</label>
+                <label class="text-label">Assertive communication</label>
+                <label class="text-label">Critical thinking</label>
+                <label class="text-label">Phyton</label>
+                <label class="text-label">React</label>
+                <label class="text-label">Mongo DB</label>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+{% endblock content  %}

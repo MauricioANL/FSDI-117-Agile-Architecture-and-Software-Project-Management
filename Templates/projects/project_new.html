@@ -1,0 +1,24 @@
+{% extends from 'base.html '%}
+{% block tittle  %} new Project {% endblock tittle  %}
+
+{% block content %}
+    <section class="new-project-section centel-colum">
+        <h2>New Project</h2>
+        <from id="projectForm" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form.name}}
+            {{form.description}}
+            {{form.year}}
+            {{form.image}}
+            {{form.repository}}
+            {{form.skill}
+
+            <div class="controls">
+                <button type="reset" class="secondary-button">Reset form</button>
+                <button  type="submit" class="primary-botton">Save Project</button>
+            </div>
+        </from>
+
+
+    </section>
+{% endblock content %}

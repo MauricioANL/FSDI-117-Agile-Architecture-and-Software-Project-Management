@@ -1,0 +1,40 @@
+@media(max-width:640px){
+    html{font-size:10px;}
+
+    header{
+        flex-direction:column  ;
+        height: max-content;
+        padding:1rem;
+    }
+
+    .header-left-side{
+        width: 100%;
+    }
+
+    .header-right-side{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .nav-item {flex-direction: column;}
+
+    .nav-item a{margin: 0.5rem 0px;}
+}
+
+
+
+@media(max-width:1007px){
+    html{font-size:13px;}
+    .about-section{
+        flex-direction: column;
+    }
+
+    .about-image-container img{
+        width: 100%;
+    }
+
+    .about-description-container{
+        width: 100%;
+        margin-top: 4rem;
+    }
+}
