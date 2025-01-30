@@ -1,4 +1,4 @@
-{% if user.is_authenticated %}
+{% if 'user.is_authenticated'  %}
     <div class="add-project-container">
         <a href="{% url 'project_new' %}">
             <button class="primary-button">Add Project</button>
@@ -9,7 +9,7 @@
 <h2>My projects</h2>
 
 <div class="projets-list">
-    {% for x in projects %}
+    {% for x in ProjectListView %}
         <div class="proyect-card">
             <a href="{{x.repository}} " target="_blank">
                 <img src="{{x.image.url}}">
