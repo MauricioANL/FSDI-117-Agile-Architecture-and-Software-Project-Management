@@ -31,11 +31,11 @@
     gap:1rem;
 }
 
-.experience-secction{
+.experience-section{
     margin: 4rem 0px;
 }
 
-.experience_card{
+.experience-card{
     display:flex;
     flex-wrap: wrap;
     width: 20rem;
@@ -43,7 +43,7 @@
     gap:0.rem;
 }
 
-.experience_list{
+.experience-list{
     display:flex;
     flex-wrap: wrap;
     margin-top: 4rem;
